@@ -7,6 +7,13 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Node is dead?! 🪦',
   description: 'Yaeh! After the new major update of Bun this site chek daily if Node.js is dead.',
+  openGraph: {
+    images: [
+      {
+        url: `${process.env.VERCEL_URL}/og`,
+      },
+    ],
+  },
 }
 
 export default function RootLayout({

@@ -1,5 +1,4 @@
 import Balancer from "react-wrap-balancer"
-import { twMerge } from "tailwind-merge"
 import { BunLogo } from "./BunLogo"
 
 export function BalancedTitle() {

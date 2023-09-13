@@ -8,9 +8,10 @@ export const metadata: Metadata = {
   title: 'Node is dead?! 🪦',
   description: 'Yaeh! After the new major update of Bun this site chek daily if Node.js is dead.',
   openGraph: {
+    url: `${process.env.NEXT_PUBLIC_VERCEL_URL}`,
     images: [
       {
-        url: `${process.env.VERCEL_URL}/og`,
+        url: `${process.env.NEXT_PUBLIC_VERCEL_URL}/og`,
       },
     ],
   },

@@ -24,13 +24,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
-
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W49LPL8C"
-          height="0" width="0" style={{ display: "none", visibility: "hidden" }}>
-        </iframe>
-      </noscript>
+      <body className={montserrat.className}>
+        {children}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W49LPL8C"
+            height="0" width="0" style={{ display: "none", visibility: "hidden" }}>
+          </iframe>
+        </noscript>
+      </body>
     </html >
   )
 }
